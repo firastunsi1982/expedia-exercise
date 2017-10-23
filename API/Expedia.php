@@ -37,7 +37,7 @@ class Expedia
 
             $data = $args[0];
 
-            echo $data . '<br/>';
+            print_r($data) . '<br/>';
             
             $url .= '?' . http_build_query($data);
 
