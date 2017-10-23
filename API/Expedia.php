@@ -61,11 +61,11 @@ class Expedia
         $response = json_decode($result, true);
         
         
-        var_dump($response);
-        exit;
+       
         
         $response = current( $response );
-
+ var_dump($response);
+        exit;
         return $response;
     }
 }
