@@ -33,11 +33,11 @@ class Expedia
         $ch = curl_init();
 
         if (count($args)) {
-            //assert(count($args) == 1);
+            assert(count($args) == 1);
 
             print_r($args) . '<br/>';
             
-            $url .= '?' . http_build_query($data);
+            $url .= '?' . http_build_query($args);
 
             print $url;
             exit;
