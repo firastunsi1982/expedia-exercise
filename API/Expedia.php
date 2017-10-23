@@ -61,6 +61,8 @@ class Expedia
         $response = json_decode($result, true);
         $response = current( $response );
         
+        print_r($response);
+        exit;
         return $response;
     }
 }
