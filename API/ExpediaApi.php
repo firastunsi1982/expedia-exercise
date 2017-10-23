@@ -1,6 +1,4 @@
 <?php
-namespace API\ExpediaApi;
-
 class ExpediaApi
 {    
     protected $api_url = 'offersvc.expedia.com/offers/';
