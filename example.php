@@ -11,11 +11,11 @@ $expedia->set_protocol('https://');
 $expedia->set_apiUrl('offersvc.expedia.com/offers/');
 $expedia->set_ver('v2');
 
-$expedia->callApi('getOffers', array(
+$hotels = $expedia->callApi('getOffers', array(
     'scenario' => 'deal-finder',
     'page' => 'foo',
     'uid' => 'foo',
     'productType' => 'Hotel'
 ));
 
-
+var_export($hotels);

@@ -35,13 +35,8 @@ class Expedia
         if (count($args)) {
             assert(count($args) == 1);
 
-            print_r($args) . '<br/>';
-            
             $url .= '?' . http_build_query($args);
 
-            print $url;
-            exit;
-        
             if( $this->method == 'GET' ) {
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
             }
@@ -62,15 +57,9 @@ class Expedia
         curl_setopt($ch, CURLOPT_ENCODING, "gzip");
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-        curl_setopt($ch, CURLOPT_VERBOSE, true);
-
-        curl_setopt($ch, CURLOPT_STDERR, $verbose);
-
+        
         $result = curl_exec($ch);
-
         $response = json_decode($result, true);
-
         $response = current( $response );
 
         return $response;
