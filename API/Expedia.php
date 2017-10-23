@@ -48,7 +48,6 @@ class Expedia
         
 
         $header[] = "Accept: application/json";
-        $header[] = "Accept-Encoding: gzip";
         $header[] = "Content-length: 0";
 
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
