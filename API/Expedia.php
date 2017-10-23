@@ -59,7 +59,7 @@ class Expedia
         
         $result = curl_exec($ch);
         $response = json_decode($result, true);
-        $response = current( $response );
+        //$response = current( $response );
         
         return $response;
     }
