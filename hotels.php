@@ -1,5 +1,8 @@
 <?php
+print '111';
+exit;
 use API\ExpediaApi;
+
 
 // create an instance
 $expedia = new ExpediaApi\ExpediaApi();
