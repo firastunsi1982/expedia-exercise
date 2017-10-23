@@ -28,16 +28,14 @@ class Expedia
     }
 
     public function callApi($name, $args){
-        $url = $this->protocol . $this->api_url . $this->ver .'/'. $name; // name is : getOffers
+        $url = $this->protocol . $this->api_url . $this->ver .'/'. $name;
 
         $ch = curl_init();
 
         if (count($args)) {
             //assert(count($args) == 1);
 
-            $data = $args[0];
-
-            print_r($data) . '<br/>';
+            print_r($args) . '<br/>';
             
             $url .= '?' . http_build_query($data);
 
