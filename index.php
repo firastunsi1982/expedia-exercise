@@ -1,7 +1,4 @@
 <?php
-
-//require_once 'API/ExpediaApi.php';
-
 use API\ExpediaApi;
 
 // create an instance

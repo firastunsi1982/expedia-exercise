@@ -1,8 +1,5 @@
 <?php
-
 namespace API\ExpediaApi;
-
-require_once dirname(__FILE__) . '/Exception.php';
 
 class ExpediaApi
 {    
