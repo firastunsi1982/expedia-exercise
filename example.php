@@ -1,21 +1,23 @@
 <?php
 
-require_once 'API/Expedia.php';
+//require_once 'API/ExpediaApi.php';
 
-use API\Expedia\Expedia;
+use API\ExpediaApi;
 
 // create an instance
-$expedia = new Expedia();
+$expedia = new ExpediaApi\ExpediaApi();
 $expedia->set_method('GET');
 $expedia->set_protocol('https://');
 $expedia->set_apiUrl('offersvc.expedia.com/offers/');
 $expedia->set_ver('v2');
 
-$hotels = $expedia->callApi('getOffers', array(
+$offers = $expedia->callApi('getOffers', array(
     'scenario' => 'deal-finder',
     'page' => 'foo',
     'uid' => 'foo',
     'productType' => 'Hotel'
 ));
+
+$hotels = $offers['offers']['Hotel'];
 
 print_r($hotels);

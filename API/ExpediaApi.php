@@ -1,10 +1,10 @@
 <?php
 
-namespace API\Expedia;
+namespace API\ExpediaApi;
 
 require_once dirname(__FILE__) . '/Exception.php';
 
-class Expedia
+class ExpediaApi
 {    
     protected $api_url = 'offersvc.expedia.com/offers/';
     protected $method = 'GET';
