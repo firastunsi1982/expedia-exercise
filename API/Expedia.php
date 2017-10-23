@@ -33,7 +33,7 @@ class Expedia
         $ch = curl_init();
 
         if (count($args)) {
-            assert(count($args) == 1);
+            //assert(count($args) == 1);
 
             $data = $args[0];
 
