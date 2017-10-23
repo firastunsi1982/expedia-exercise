@@ -1,11 +1,13 @@
 <?php
-print '111';
-exit;
+
 use API\ExpediaApi;
+print '111';
 
 
 // create an instance
 $expedia = new ExpediaApi\ExpediaApi();
+print '222';
+exit;
 $expedia->set_method('GET');
 $expedia->set_protocol('https://');
 $expedia->set_apiUrl('offersvc.expedia.com/offers/');
