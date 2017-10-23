@@ -18,4 +18,4 @@ $hotels = $expedia->callApi('getOffers', array(
     'productType' => 'Hotel'
 ));
 
-print_r($hotels);
+var_dump($hotels);
