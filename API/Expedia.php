@@ -28,7 +28,7 @@ class Expedia
     }
 
     public function callApi($name, $args){
-        $url = $this->protocol . $this->hotel_api_url . $ver .'/'.$name; // name is : getOffers
+        $url = $this->protocol . $this->api_url . $this->ver .'/'. $name; // name is : getOffers
 
         $ch = curl_init();
 
