@@ -12,15 +12,12 @@ class ExpediaApi
     public function set_ver( $ver ){
         $this->$ver = $ver;
     }
-    
     public function set_apiUrl( $api_url ){
         $this->$api_url = $api_url;
     }
-    
     public function set_method( $method ){
         $this->method = $method;
     }
-
     public function set_protocol( $protocol ){
         $this->protocol = $protocol;
     }
@@ -30,6 +27,7 @@ class ExpediaApi
         //Perepare ApiURL with query params
         $url = $this->protocol . $this->api_url . $this->ver .'/'. $name;
 
+        //CURL initilize
         $ch = curl_init();
 
         if (count($args)) {
@@ -46,7 +44,7 @@ class ExpediaApi
             }
         }
         
-
+        
         $header[] = "Accept: application/json";
         $header[] = "Content-length: 0";
 
