@@ -6,11 +6,10 @@ div {
 
 ul {
     list-style-type: none;
-    width: 500px;
 }
 
 h3 {
-    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    font: bold 16px/1.5 Helvetica, Verdana, sans-serif;
 }
 
 li img {
@@ -20,6 +19,7 @@ li img {
 
 li p {
     font: 200 12px/1.5 Georgia, Times New Roman, serif;
+    margin-left: 86px;
 }
 
 li {
@@ -30,4 +30,48 @@ li {
 li:hover {
     background: #eee;
     cursor: pointer;
+}
+a{
+    color: #000;
+    text-decoration:none;
+}
+ul span{
+    float: left;
+    width: 60%;
+    font-size: 14px;
+}
+form{
+    padding: 15px;
+    width: 70%;
+    font-size: 17px;
+    margin: 17px;
+}
+label{
+    font-size: 13px;
+    font-family: sans-serif;
+    width: 148px;
+    float: left;
+    padding-top: 12px;
+    float: left;
+}
+input[type=text]{
+    width: 28%;
+    padding: 3px;
+    margin: 9px;
+    box-sizing: border-box;
+    float: left;
+}
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+form span{
+    padding-bottom: 10px;
+    width: 100%;
+    float: left;
 }
