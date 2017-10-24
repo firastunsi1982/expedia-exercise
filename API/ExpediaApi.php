@@ -9,8 +9,8 @@ class ExpediaApi
     protected $ver = '';
     
     //Setter & Getter
-    public function set_url( $apiUrl ){
-        $this->url = $apiUrl;
+    public function set_url( $url ){
+        $this->url = $url;
     }
     public function set_method( $method ){
         $this->method = $method;
