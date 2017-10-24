@@ -1,6 +1,5 @@
 <?php
 require_once 'API/ExpediaApi.php';
-
 // create an instance
 $expedia = new ExpediaApi();
 //set ApiURL,method Type, verion, ...etc
