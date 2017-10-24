@@ -19,5 +19,4 @@ $offers = $expedia->callApi('getOffers', array(
 $hotels = $offers['offers']['Hotel'];
 
 
-
-print_r($hotels);
+include 'views/hotels.php';
