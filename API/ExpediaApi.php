@@ -1,10 +1,12 @@
 <?php
 class ExpediaApi
 {    
-    protected $api_url = '';
-    protected $method = '';
-    protected $protocol = '';
-    protected $ver = '';
+    
+    //Set as default values
+    protected $api_url = 'offersvc.expedia.com/offers/';
+    protected $method = 'GET';
+    protected $protocol = 'https://';
+    protected $ver = 'v2';
     
     //Setter & Getter
     public function set_ver( $ver ){
