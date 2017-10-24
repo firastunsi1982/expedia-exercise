@@ -3,14 +3,14 @@ class ExpediaApi
 {    
     
     //Set as default values
-    protected $apiurl = '';
+    protected $url = '';
     protected $method = '';
     protected $protocol = '';
     protected $ver = '';
     
     //Setter & Getter
-    public function set_apiurl( $apiUrl ){
-        $this->apiurl = $apiUrl;
+    public function set_url( $apiUrl ){
+        $this->url = $apiUrl;
     }
     public function set_method( $method ){
         $this->method = $method;

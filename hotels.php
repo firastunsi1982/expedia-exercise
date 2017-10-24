@@ -8,7 +8,7 @@ $expedia = new ExpediaApi();
 //set ApiURL,method Type, verion, ...etc
 $expedia->set_method($config['API_METHOD']);
 $expedia->set_protocol($config['API_PROTOCOL']);
-$expedia->set_apiurl($config['API_URL']);
+$expedia->set_url($config['API_URL']);
 $expedia->set_ver($config['API_VER']);
 
 //Basic params for getOffer API
