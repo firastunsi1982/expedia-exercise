@@ -36,7 +36,7 @@ class ExpediaApi
             assert(count($args) == 1);
 
             $url .= '?' . http_build_query($args);
-            echo $url;
+         
             if( $this->method == 'GET' ) {
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
             }
