@@ -9,7 +9,7 @@ $config = array(
     'API_PROTOCOL' => 'https://',
     'API_METHOD' => 'GET', 
     'API_URL' => 'offersvc.expedia.com/offers/',
-    'API_VER' => 'v2',
+    'API_VER' => 'v3',
     // getOffers API params Config
     'API_SCENARIO'=>'deal-finder',
     'API_PAGE'=>'foo',
