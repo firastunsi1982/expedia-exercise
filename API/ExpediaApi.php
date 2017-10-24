@@ -6,20 +6,24 @@ class ExpediaApi
     protected $apiUrl = 'offersvc.expedia.com/offers/';
     protected $method = 'GET';
     protected $protocol = 'https://';
-    public $ver = '';
+    protected $ver = '';
     
     //Setter & Getter
     public function set_ver( $ver ){
         $this->$ver = $ver;
+        return $this;
     }
     public function set_apiUrl( $api_url ){
         $this->$api_url = $api_url;
+        return $this;
     }
     public function set_method( $method ){
         $this->method = $method;
+        return $this;
     }
     public function set_protocol( $protocol ){
         $this->protocol = $protocol;
+        return $this;
     }
 
     //API CALL
