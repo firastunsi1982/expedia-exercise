@@ -27,7 +27,7 @@ class ExpediaApi
     //API CALL
     public function callApi($name, $args){
         //Perepare ApiURL with query params
-        $url = $this->protocol . $this->api_url . $this->ver .'/'. $name;
+        $url = $this->protocol . $this->url . $this->ver .'/'. $name;
 
         //CURL initilize
         $ch = curl_init();
