@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <title>Expedia - Hotels Offers!</title>
-        <link rel="stylesheet" href="<?php echo $config['SITE_PROTOCOL'] . $config['BASEURL'] . '/' . $config['APP'] ?>/assets/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?php echo $config['SITE_PROTOCOL'] . $config['BASEURL'] . '/' . $config['APP'] ?>/assets/style.css?<?php echo rand(99,999)?>" type="text/css" media="screen" />
     </head>
     <body>
         <form name="searchHotel" action="hotels.php" method="GET">
