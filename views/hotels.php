@@ -6,7 +6,7 @@
     </head>
     <body>
         <form name="searchHotel" action="hotels.php" method="GET">
-            <span>API Search </span><br/>
+            <span>Expedia API Search:</span><br/>
             <label>Destination Name </label><input value="<?php echo $_GET['destName'];?>" name="destName" type="text" placeholder="New York"/>
             <label>Destination City </label><input value="<?php echo $_GET['destCity'];?>" name="destCity" type="text" placeholder="New York"/>
             <label>Min Trip Start Date </label><input value="<?php echo $_GET['minTripSt'];?>" name="minTripSt" type="text" placeholder="2017-05-03"/>
