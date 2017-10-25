@@ -42,9 +42,10 @@ ul span{
 }
 form{
     padding: 15px;
-    width: 70%;
+    width: 50%;
     font-size: 17px;
     margin: 17px;
+    float:left;
 }
 label{
     font-size: 13px;
@@ -74,4 +75,8 @@ form span{
     padding-bottom: 10px;
     width: 100%;
     float: left;
+}
+.main{
+    float: left;
+    width: 50%;
 }

@@ -22,6 +22,7 @@
             <input type="submit" name="searchBtn" value="Search"/>
         </form>
         
+        <div class="main">
         <?php foreach ($hotels as $hotel): ?>
             <?php $offerDateRange = $hotel['offerDateRange']; ?>
             <?php $travelStartDate = $offerDateRange['travelStartDate'][0].'-'.$offerDateRange['travelStartDate'][1].'-'.$offerDateRange['travelStartDate'][2];?>
@@ -67,5 +68,6 @@
                 </ul>
             </div>
         <?php endforeach; ?>
+        </div>
     </body>
 </html>
