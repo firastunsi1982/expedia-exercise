@@ -17,7 +17,7 @@ $config = array(
     'API_PRODUCT_TYPE'=>'Hotel',
     // Rooms Status
     'ROOM_STATUS' => [
-        'AVAILABLE'   => [0=>'AVAILABLE',1=>'Availabe'],
+        'AVAILABLE'   => [0=>'AVAILABLE',1=>'Available'],
         'ALMOST_SOLD' => [0=>'ALMOST_SOLD',1=>'Sold'],
     ],
 );
